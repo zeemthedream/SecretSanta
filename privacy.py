@@ -1,3 +1,3 @@
-#Be sure to imput your sender gmail and corresponding password.
+#Be sure to input your sender gmail and corresponding password.
 sender = ""
 password = ""
