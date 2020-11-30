@@ -3,6 +3,7 @@ Beginner friendly python script that allows you to randomize Secret Santa for a 
 
 ## Youtube Video
 Check out my walkthrough of this program on youtube.
+* [Secret Santa Video](https://youtu.be/_hrCVx2cuPg)
 
 ## Needed Module
 * [Random](https://docs.python.org/3/library/random.html)
