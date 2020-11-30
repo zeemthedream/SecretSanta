@@ -40,25 +40,25 @@ class SecretSanta:
             ind = choices.index(secret_person)
             choices.pop(ind)
 
-    # send every participant their secret santa that was assigned
+    # send every secret santa participant their secret person
     def send_emails(self):
         server = smtplib.SMTP("smtp.gmail.com", 587) # 587 (gmail port number)
         server.starttls()
-        server.login(sender, password)
+        server.login(sender,password)
         print("Login successful.")
-        for person, ss in self.selection.items():
+        for person,sp in self.selection.items():
             receiver = self.info[person][0]
-            ss_address = self.info[ss][1]
-            ss_request = self.info[ss][2]
+            sp_address = self.info[sp][1]
+            sp_request = self.info[sp][2]
             message = "SUBJECT: SECRET SANTA\n" \
                       "Hello {},\n\n" \
-                      "SHHH, your secret santa is: {}.\n\n" \
+                      "SHHH, your secret santa person is: {}.\n\n" \
                       "The budget of the gift exchange is ${}.\n\n" \
-                      "Here is {}'s wishlist: {}.\n\n" \
+                      "Here is {}'s wishlist: {}\n\n" \
                       "This is their address to send the gift: {}\n\n" \
-                      "Enjoy!".format(person ,ss ,self.budget ,ss ,ss_request, ss_address)
+                      "Enjoy!".format(person,sp,self.budget,sp,sp_request,sp_address)
             server.sendmail(sender,receiver,message)
-            print("{} has been sent their secret santa.".format(person))
+            print("{} has been sent their secret person.".format(person))
         server.quit()
 
     def start(self):
