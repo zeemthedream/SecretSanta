@@ -5,6 +5,7 @@ Beginner friendly python script that allows you to randomize Secret Santa for a 
 Check out my walkthrough of this program on youtube.
 
 ## Needed Module
+* [Random](https://docs.python.org/3/library/random.html)
 * [SMTP](https://docs.python.org/3/library/smtplib.html#)
 * [SMTP (more info)](https://www.geeksforgeeks.org/send-mail-gmail-account-using-python/)
 
