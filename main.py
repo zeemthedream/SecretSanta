@@ -20,7 +20,7 @@ class SecretSanta:
             name = input("What is the name of participant {}?: ".format(i))
             email = input("What is their email?: ")
             address = input("What is their address?: ")
-            request = input("What are their gift request? (separated by commas): ")
+            request = input("What are their gift requests? (separated by commas): ")
             self.info[name] = [email, address, request]
 
     # assign a random secret santa for every participant
